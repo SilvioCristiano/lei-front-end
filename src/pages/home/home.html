@@ -1,9 +1,8 @@
-<ion-content padding>
-  <h3>Sistema de pedidos</h3>
 
-  <img src="assets/imgs/tela-inicial.png" alt="logo">
-
+<ion-content class="landing">
+  
   <form>
+    <div class="facebook">
     <ion-item>
       <ion-label stacked>Email</ion-label>
       <ion-input [(ngModel)]="creds.email" name="email" type="text"></ion-input>
@@ -13,7 +12,17 @@
       <ion-input [(ngModel)]="creds.senha" name="senha" type="password"></ion-input>
     </ion-item>
     <button ion-button block (click)="login()">Entrar</button>
+    <button ion-button block outline (click)="signup()">Registrar</button>
+    <button ion-button block class="button button-assertive">
+          <i class="ion-social-facebook big"></i>Facebook</button>
+  </div>
   </form>
-  <button ion-button block outline (click)="signup()">Registrar</button>
+  
 
 </ion-content>
+
+
+  
+        
+       
+  

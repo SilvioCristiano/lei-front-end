@@ -11,4 +11,28 @@ page-home {
         display: block;
         padding: 10px;
     }
+    .landing {
+        background: url(../img/home.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .facebook {
+        max-width: 225px;
+        margin: 0 auto;
+        position: relative;
+        top: 425px;
+        
+    }
+
+    .facebook-button {
+        position: absolute;
+        top: 425px;
+    }
+
+    .big {
+        font-size: 20px;
+    }
 }
