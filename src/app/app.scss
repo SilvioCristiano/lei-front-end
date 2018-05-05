@@ -14,3 +14,156 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+
+ion-menu{
+    .menu-inner{
+        width: 180px;
+    }
+    .header-md{
+        &::after{
+            display: none;
+        }
+    }
+    .toolbar-md{
+        min-height: 195px;
+    }
+
+    .content-md{
+        background-color: color($colors,secondary);
+    }
+    .list-md{
+        margin: 10px 0;
+    }
+    .menu-item{
+        background: none;
+        color: color($colors,light);
+        font-size: 1.4rem;
+        padding-top: 7px;
+    }
+    .item-md{
+        padding-left: 8px;
+        &.activated{
+            background-color: transparent;
+        }
+        ion-icon{
+            min-height: 2rem;
+            font-size: 2rem;
+            line-height: .9;
+        }
+        ion-icon[item-left]{
+            + .item-inner{
+                margin-left: 15px;
+            }
+        }
+    }
+    .footer-md{
+        &::before{
+            display: none;
+        }
+        .logOut-btn{
+            margin-bottom: 25px;
+            box-shadow: none;
+            border-radius: 0;
+            font-weight: normal;
+        }
+        .label-md{
+            font-size: 1.4rem;
+        }
+    }
+}
+.activeBtn{
+    position: relative;
+    color: color($colors,primary);
+    &::after{
+        content: '';
+        position: absolute;
+        top: -13px;
+        left: -8px;
+        z-index: -1;
+        width: 44px;
+        height: 44px;
+        background-color: color($colors,light) !important;
+        border-radius: 0 4px 4px 0;
+    }
+}
+.circle {
+    width: 60%;
+    border-radius: 100%;
+    margin: 25px auto 0 auto;
+}
+.menu-head{
+    img{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        margin-top: 20px;
+        object-fit: cover;
+        -o-object-fit: cover;
+    }
+  
+    h4{
+        margin: 5px 0;
+        font-size: 1.45rem;
+        color: color($colors,light);
+    }
+    p{
+        font-size: 1.3rem;
+        color: color($colors,light);
+    }
+}
+.header-md{
+  
+    background-image: none;
+    bottom: 0px;
+    
+}
+.back-button-md{
+    margin: 0;
+}
+.back-button-icon-md{
+    font-size: 2.1rem;
+}
+
+.md ion-menu{
+    .menu-inner{
+        ion-header{
+            .toolbar.statusbar-padding{
+                &:first-child{
+                    min-height: 215px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .md .modal-wrapper > .ion-page > ion-header > .share-toolbar.statusbar-padding:first-child{
+        padding-top: 4px;
+        min-height: 56px;
+    }
+}
+.item-menu.item.item-complex .item-content {
+	background-color: #444444;
+	color: #FFF;
+	font-weight: 500;
+	padding-bottom: 30px;
+}
+
+.item-menu.item.item-complex {
+	border: none !important;
+}
+
+.menu.menu-left {
+	width: 100%;
+	background-color: #444444;
+}
+
+.icon-menu.icon {
+	font-size: 25px;
+	margin-right: 10px;
+	border: 2px solid;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 50%;
+}

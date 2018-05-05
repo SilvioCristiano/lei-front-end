@@ -8,7 +8,19 @@
 </ion-header>
 
 <ion-content padding>
-
+    <ion-searchbar
+    [(ngModel)]="myInput"
+    [showCancelButton]="shouldShowCancel"
+    (ionInput)="getTopics($event)"
+    (ionCancel)="onCancel($event)">
+  </ion-searchbar>
+ 
+  <ion-list>
+      <ion-item *ngFor="let topic of topics">
+        {{ topic }}
+      </ion-item>
+    </ion-list>
+    
   <ion-refresher (ionRefresh)="doRefresh($event)">
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
