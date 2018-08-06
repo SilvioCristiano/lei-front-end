@@ -6,5 +6,6 @@ export interface AdvogadoDTO {
     saccional : string;
     email : string;
     cpfOuCnpj : string;
+    idchamada : string;
     imageUrl? : string;
 }

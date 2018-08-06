@@ -1,21 +1,23 @@
 page-categorias {
     .item {
         border-color: rgb(201, 197, 197);
-        background-color: rgb(201, 197, 197);
-        color: #444;
+        background-color:#928DAD;
+        color: white;
         position: relative;
         z-index: 2;
         display: -webkit-box;
-       
-      
-       
+        font-weight: bold;
       }
 
-       .padding {
-        background: url(../img/home.png) no-repeat center center fixed;
+       .landing {
+        background: url(../img/back.png) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+    }
+    .navbar{
+        color: #0D0247;
+        background-color: #b89751;
     }
 }

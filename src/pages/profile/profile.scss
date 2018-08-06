@@ -4,4 +4,27 @@ page-profile {
         border-radius: 100%;
         margin: 25px auto 0 auto;
     }
+    .landing {
+        background: url(../img/back.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        color: #b89751;
+        
+    }
+    .button{
+        color: #0D0247;
+        background-color: #b89751;
+    }
+    .outline{
+        color: #b89751;
+        background-color: #0D0247;
+    }
+    .card {
+        background: transparent;
+        color: #b89751;
+        font-weight: bold;
+        text-align: center
+    }
 }

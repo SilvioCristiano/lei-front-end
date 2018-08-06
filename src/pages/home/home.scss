@@ -17,6 +17,25 @@ page-home {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+        
+    }
+
+    .login {
+        max-width: 225px;
+        margin: 0 auto;
+        position: relative;
+        top: 425px;
+        padding-left: -15px;
+    }
+
+    .login-input {
+        background: transparent;
+    }
+
+    .login-item {
+        background: transparent;
+        color: #b89751;
+        font-weight: bold;
     }
 
     .facebook {
@@ -34,5 +53,13 @@ page-home {
 
     .big {
         font-size: 20px;
+    }
+    .button{
+        color: #0D0247;
+        background-color: #b89751;
+    }
+    .outline{
+        color: #b89751;
+        background-color: #0D0247;
     }
 }

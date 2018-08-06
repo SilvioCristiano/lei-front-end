@@ -2,19 +2,21 @@
 <ion-content class="landing">
   
   <form>
-    <div class="facebook">
-    <ion-item>
+    <div class="login">
+    <ion-item class="login-item">
       <ion-label stacked>Email</ion-label>
-      <ion-input [(ngModel)]="creds.email" name="email" type="text"></ion-input>
+      <ion-input class="login-input" [(ngModel)]="creds.email" name="email" type="text"></ion-input>
     </ion-item>
-    <ion-item>
+    <ion-item class="login-item">
       <ion-label stacked>Senha</ion-label>
-      <ion-input [(ngModel)]="creds.senha" name="senha" type="password"></ion-input>
+      <ion-input class="login-input" [(ngModel)]="creds.senha" name="senha" type="password"></ion-input>
     </ion-item>
+  </div>
+  <div class="facebook">
     <button ion-button block (click)="login()">Entrar</button>
     <button ion-button block outline (click)="signup()">Registrar</button>
     <button ion-button block class="button button-assertive">
-          <i class="ion-social-facebook big"></i>Facebook</button>
+    <i class="ion-social-facebook big"></i>Facebook</button>
   </div>
   </form>
   

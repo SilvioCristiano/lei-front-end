@@ -7,9 +7,9 @@
       </ion-toolbar>
     </ion-header>
 
-  <ion-content>
+  <ion-content class="landing">
     <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+      <button class="landing" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
           <ion-icon name="{{p.icon}}" [ngClass]="{'activeBtn':select==p}" item-center></ion-icon>
           
         {{p.title}}

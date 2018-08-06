@@ -28,7 +28,7 @@
   </script>-->
 
   <link href="build/main.css" rel="stylesheet">
-
+  <script src="https://cloud.apizee.com/apiRTC/v3.15/apiRTC-3.15.min.debug.js"></script>
 </head>
 <body>
 
@@ -45,5 +45,20 @@
   <!-- The main bundle js is generated during the build process -->
   <script src="build/main.js"></script>
 
+  <style>
+    .remote video {
+      width: 100% !important;
+    }
+  </style>
+
+  <script>
+    var iosrtc = null;
+    document.addEventListener("deviceready", function() {
+      if ((typeof device !== "undefined") && device.platform == 'iOS'){
+        cordova.plugins.iosrtc.registerGlobals();
+        iosrtc = cordova.plugins.iosrtc;
+      }
+    }, false);
+  </script>
 </body>
 </html>

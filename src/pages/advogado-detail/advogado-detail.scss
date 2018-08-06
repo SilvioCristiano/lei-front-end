@@ -1,3 +1,29 @@
 page-advogado-detail {
 
+    .landing {
+        background: url(../img/back.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        
+    }
+
+    .button{
+        color: #0D0247;
+        background-color: #b89751;
+    }
+    .outline{
+        color: #b89751;
+        background-color: #0D0247;
+    }
+
+    .card-item {
+        background: transparent;
+        color:white;
+        font-weight: bold;
+    }
+    .minivideo{
+        position: absolute;
+    }
 }

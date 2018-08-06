@@ -1,26 +1,44 @@
+
 <ion-header>
   <ion-navbar>
     <button ion-button menuToggle>
         <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>AdvogadoDetail</ion-title>
+    <ion-title>{{item?.name}}</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding class="landing">
  
 
-  <ion-card>
+  <ion-card class="card-item">
     <img [src]="item?.imageUrl || 'assets/imgs/prod.jpg'"/>
     <ion-card-content>
-      <ion-card-title>
+      
+      <ion-card-title class="card-item">
+          <ion-label stacked>Nome:</ion-label>
         {{item?.name}}
+        <ion-label stacked>Inscrição</ion-label>
+        {{item?.inscricao}}
+        <ion-label stacked>Saccional</ion-label>
+        {{item?.saccional}}
         </ion-card-title>
-      <p>
-        {{item?.preco | currency}}
-      </p>
+     
+      
     </ion-card-content>
   </ion-card>
 
-  <button ion-button block outline (click)="addToCart(item)">Adicionar ao carrinho</button>
+
+  <ion-input type="text" value=""  placeholder="Enter destination ID"  [(ngModel)]="distantNumber"></ion-input>
+  <button ion-button full large (click)="pushCall($event)" [ngStyle]="{'background-color': buttonColor}">{{buttonLabel}}</button>
+  <button ion-button block outline >Agendar horário</button>
+  <button ion-button block outline >Chat</button>
+
+  <div>
+    <div style="text-align: center">{{infoLabel}}</div>
+    <div id="mini" class="minivideo"></div>
+    <div id="remote" style="width:100%;"></div>
+  </div>
+
+  
 </ion-content>

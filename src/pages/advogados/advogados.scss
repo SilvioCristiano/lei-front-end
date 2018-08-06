@@ -2,8 +2,8 @@ page-advogados {
 
       .item {
         border-color: rgb(201, 197, 197);
-        background-color: rgb(201, 197, 197);
-        color: #444;
+        background-color:#928DAD;
+        color: white;
         position: relative;
         z-index: 2;
         display: block;
@@ -12,8 +12,15 @@ page-advogados {
         border-width: 1px;
         border-style: solid;
         font-size: 16px;
+        font-weight: bold;
       }
     
-     
+      .landing {
+        background: url(../img/back.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
       
 }
